@@ -11,8 +11,25 @@
 
     //ENTRADA
 
+    let temperaturaCelsius = Number(prompt(`Informe uma temperatura em graus Celsius`)).toFixed(2)
 
     //PROCESSAMENTO
+
+    if (isNaN(temperaturaCelsius)) {
+        alert(`Temperatura Inválida!`)
+    }
+    else if (temperaturaCelsius < 100) {
+        alert(`Está muito baixa!`)
+    }
+    else if (temperaturaCelsius <= 200) {
+        alert(`Está baixa!`)
+    }
+    else if (temperaturaCelsius < 500) {
+        alert(`Está normal!`)
+    }
+    else {
+        alert(`Está muito alta!`)
+    }
 
     
     //SAÍDA
